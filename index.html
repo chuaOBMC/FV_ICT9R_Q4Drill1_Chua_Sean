@@ -15,7 +15,7 @@
             function checkElectric(){
                 var Electric = document.getElementById("Electric").value;
 
-        if (isNaN(Electric) || Age < 0){
+        if (isNaN(Electric) || Electric < 0){
             alert("Please input a valid number");
         }
         else if (Electric <= 100){
@@ -30,7 +30,7 @@
         else if(Electric <= 500){
             alert("Higher electricity usage");
         }
-        else if (Electric > 500){
+        else {
             alert("Bill could not be determined");
         }
     }
