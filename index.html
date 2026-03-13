@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 Drill 1</title>
+</head>
+<body>
+    <input type="text" class="form-control" id="Electric" placeholder="type here....">
+<button class="btn btn-info" onclick="checkElectric()">Check
+</button>
+
+        <script>
+            function checkEletric(){
+                var Electric = document.getElementById("Electric").value;
+
+        if (isNaN(Electric) || Age < 0){
+            alert("Please input a valid number");
+        }
+        else if (Electric <= 100){
+            alert("Discounted Eletricity Range");
+        }
+        else if (Electric <= 200){
+            alert("Normal residential rate");
+        }
+        else if(Electric <= 300){
+            alert("Typical electricity usage");
+        }
+        else if(Electric <= 500){
+            alert("Typical electricity usage");
+        }
+        else if (Electric > 500){
+            alert("Bill could not be determined");
+        }
+    }
+</body>
+</html>
